@@ -58,7 +58,6 @@ public class Commandkittycannon extends EssentialsCommand {
         final int i = random.nextInt(Cat.Type.values().length);
         cat.setCatType(Cat.Type.values()[i]);
         cat.setTamed(true);
-        cat.setBaby();
         cat.setVelocity(user.getBase().getEyeLocation().getDirection().multiply(2));
 
         return cat;

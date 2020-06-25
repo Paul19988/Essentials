@@ -110,12 +110,10 @@ public class OfflinePlayer implements Player {
     public void setHealth(double d) {
     }
 
-    @Override
     public double getAbsorptionAmount() {
         return 0;
     }
 
-    @Override
     public void setAbsorptionAmount(double v) {
     }
 
@@ -144,7 +142,6 @@ public class OfflinePlayer implements Player {
         return world;
     }
 
-    @Override
     public void setRotation(float yaw, float pitch) {
         location.setYaw(yaw);
         location.setPitch(pitch);
@@ -173,7 +170,6 @@ public class OfflinePlayer implements Player {
         return null;
     }
 
-    @Override
     public Pose getPose() {
         return null;
     }
@@ -215,6 +211,21 @@ public class OfflinePlayer implements Player {
     }
 
     @Override
+    public void awardAchievement(Achievement achievement) {
+
+    }
+
+    @Override
+    public void removeAchievement(Achievement achievement) {
+
+    }
+
+    @Override
+    public boolean hasAchievement(Achievement achievement) {
+        return false;
+    }
+
+    @Override
     public void chat(String string) {
     }
 
@@ -243,22 +254,18 @@ public class OfflinePlayer implements Player {
         return Collections.emptyList();
     }
 
-    @Override
     public Block getTargetBlockExact(int maxDistance) {
         return null;
     }
 
-    @Override
     public Block getTargetBlockExact(int maxDistance, FluidCollisionMode fluidCollisionMode) {
         return null;
     }
 
-    @Override
     public RayTraceResult rayTraceBlocks(double maxDistance) {
         return null;
     }
 
-    @Override
     public RayTraceResult rayTraceBlocks(double maxDistance, FluidCollisionMode fluidCollisionMode) {
         return null;
     }
@@ -653,11 +660,9 @@ public class OfflinePlayer implements Player {
     public void setTotalExperience(int i) {
     }
 
-    @Override
     public void sendExperienceChange(float v) {
     }
 
-    @Override
     public void sendExperienceChange(float v, int i) {
     }
 
@@ -807,17 +812,14 @@ public class OfflinePlayer implements Player {
     public void setBedSpawnLocation(Location lctn, boolean force) {
     }
 
-    @Override
     public boolean sleep(Location location, boolean force) {
         return false;
     }
 
-    @Override
     public void wakeup(boolean setSpawnLocation) {
 
     }
 
-    @Override
     public Location getBedLocation() {
         return null;
     }
@@ -1018,7 +1020,6 @@ public class OfflinePlayer implements Player {
         return 0;
     }
 
-    @Override
     public float getAttackCooldown() {
         return 0f;
     }
@@ -1342,17 +1343,14 @@ public class OfflinePlayer implements Player {
         return false;
     }
 
-    @Override
     public void attack(Entity entity) {
 
     }
 
-    @Override
     public void swingMainHand() {
 
     }
 
-    @Override
     public void swingOffHand() {
 
     }
@@ -1366,12 +1364,10 @@ public class OfflinePlayer implements Player {
         return false;
     }
 
-    @Override
     public <T> T getMemory(MemoryKey<T> memoryKey) {
         return null;
     }
 
-    @Override
     public <T> void setMemory(MemoryKey<T> memoryKey, T t) {
 
     }
@@ -1385,7 +1381,6 @@ public class OfflinePlayer implements Player {
     public void sendSignChange(Location arg0, String[] arg1) throws IllegalArgumentException {
     }
 
-    @Override
     public void sendSignChange(Location loc, String[] lines, DyeColor dyeColor) throws IllegalArgumentException {
 
     }
@@ -1580,7 +1575,6 @@ public class OfflinePlayer implements Player {
         return null;
     }
 
-    @Override
     public int getClientViewDistance() {
         return 0;
     }
@@ -1632,7 +1626,6 @@ public class OfflinePlayer implements Player {
         return 0;
     }
 
-    @Override
     public BoundingBox getBoundingBox() {
         return null;
     }
@@ -1661,11 +1654,9 @@ public class OfflinePlayer implements Player {
 	public void updateCommands() {
 	}
 
-    @Override
     public void openBook(ItemStack book) {
     }
 
-    @Override
     public PersistentDataContainer getPersistentDataContainer() {
         return null;
     }

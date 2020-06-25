@@ -93,6 +93,16 @@ public class FakeServer implements Server {
     }
 
     @Override
+    public String getServerName() {
+        return null;
+    }
+
+    @Override
+    public String getServerId() {
+        return null;
+    }
+
+    @Override
     public int broadcastMessage(String string) {
         int i = 0;
         for (Player player : players) {
@@ -221,7 +231,6 @@ public class FakeServer implements Server {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void runTask(Plugin plugin, Consumer<BukkitTask> task) throws IllegalArgumentException {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -237,7 +246,6 @@ public class FakeServer implements Server {
                 return null;
             }
 
-            @Override
             public void runTaskAsynchronously(Plugin plugin, Consumer<BukkitTask> task) throws IllegalArgumentException {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -252,7 +260,6 @@ public class FakeServer implements Server {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void runTaskLater(Plugin plugin, Consumer<BukkitTask> task, long delay) throws IllegalArgumentException {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -268,7 +275,6 @@ public class FakeServer implements Server {
                 return null;
             }
 
-            @Override
             public void runTaskLaterAsynchronously(Plugin plugin, Consumer<BukkitTask> task, long delay) throws IllegalArgumentException {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -283,7 +289,6 @@ public class FakeServer implements Server {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void runTaskTimer(Plugin plugin, Consumer<BukkitTask> task, long delay, long period) throws IllegalArgumentException {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -298,7 +303,6 @@ public class FakeServer implements Server {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void runTaskTimerAsynchronously(Plugin plugin, Consumer<BukkitTask> task, long delay, long period) throws IllegalArgumentException {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -433,6 +437,11 @@ public class FakeServer implements Server {
     @Override
     public World getWorld(UUID uuid) {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public MapView getMap(short i) {
+        return null;
     }
 
     public MapView getMap(int id) {
@@ -594,92 +603,74 @@ public class FakeServer implements Server {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void incrementStatistic(Statistic statistic) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void decrementStatistic(Statistic statistic) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public int getStatistic(Statistic statistic) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void incrementStatistic(Statistic statistic, int amount) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void decrementStatistic(Statistic statistic, int amount) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void setStatistic(Statistic statistic, int newValue) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void incrementStatistic(Statistic statistic, Material material) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void decrementStatistic(Statistic statistic, Material material) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public int getStatistic(Statistic statistic, Material material) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void incrementStatistic(Statistic statistic, Material material, int amount) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void decrementStatistic(Statistic statistic, Material material, int amount) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void setStatistic(Statistic statistic, Material material, int newValue) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void incrementStatistic(Statistic statistic, EntityType entityType) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void decrementStatistic(Statistic statistic, EntityType entityType) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public int getStatistic(Statistic statistic, EntityType entityType) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void incrementStatistic(Statistic statistic, EntityType entityType, int amount) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void decrementStatistic(Statistic statistic, EntityType entityType, int amount) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
 
-            @Override
             public void setStatistic(Statistic statistic, EntityType entityType, int newValue) {
                 throw new UnsupportedOperationException("Not supported yet.");
             }
@@ -888,12 +879,10 @@ public class FakeServer implements Server {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public int getTicksPerWaterSpawns() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public int getTicksPerAmbientSpawns() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
@@ -918,7 +907,6 @@ public class FakeServer implements Server {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public boolean removeRecipe(NamespacedKey key) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
@@ -1048,22 +1036,18 @@ public class FakeServer implements Server {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public KeyedBossBar createBossBar(NamespacedKey key, String title, BarColor color, BarStyle style, BarFlag... flags) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public Iterator<KeyedBossBar> getBossBars() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public KeyedBossBar getBossBar(NamespacedKey key) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public boolean removeBossBar(NamespacedKey key) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
@@ -1320,7 +1304,6 @@ public class FakeServer implements Server {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public List<Entity> selectEntities(CommandSender sender, String selector) throws IllegalArgumentException {
         throw new UnsupportedOperationException("Not supported yet.");
     }

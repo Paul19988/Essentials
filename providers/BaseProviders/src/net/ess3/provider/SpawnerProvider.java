@@ -15,7 +15,7 @@ public interface SpawnerProvider extends Provider {
 
     Map<EntityType, String> entityToDisplayName = ImmutableMap.<EntityType, String>builder()
             .put(EntityType.CAVE_SPIDER, "Cave Spider")
-            .put(EntityType.PIG_ZOMBIE, "Zombie Pigman")
+            .put(EntityType.ZOMBIFIED_PIGLIN, "Zombie Pigman")
             .put(EntityType.MAGMA_CUBE, "Magma Cube")
             .put(EntityType.ENDER_DRAGON, "Ender Dragon")
             .put(EntityType.MUSHROOM_COW, "Mooshroom")

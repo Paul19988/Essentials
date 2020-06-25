@@ -18,7 +18,7 @@ public class EssentialsProtectEntityListener_1_14_R1 implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onEntityChangeBlock(EntityChangeBlockEvent event) {
-        if (event.getEntityType() == EntityType.RAVAGER && prot.getSettingBool(ProtectConfig.prevent_ravager_thief)) {
+        if (event.getEntityType() == EntityType.UNKNOWN && prot.getSettingBool(ProtectConfig.prevent_ravager_thief)) {
             event.setCancelled(true);
         }
     }
